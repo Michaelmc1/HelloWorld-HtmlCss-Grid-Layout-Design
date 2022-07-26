@@ -1,0 +1,73 @@
+@import url('https://fonts.googleapis.com/css2?family=Edu+VIC+WA+NT+Beginner:wght@600&display=swap');
+
+* {
+    padding: 0; /*Reset the outer Padding*/
+    margin: 0; /*Reset the inner Padding*/
+    font-family: 'Edu VIC WA NT Beginner', cursive;
+    overflow: hidden; /*Hide the over-lapping of elements if any has been caused*/
+}
+
+body { /*selector*/
+    /*Properties Field*/
+}
+
+.container {
+    height: 100vh;
+    background: linear-gradient(to top, cornflowerblue, coral, transparent);
+    display: grid;
+    grid-template-columns:repeat(12, 1fr);
+    grid-template-rows:repeat(12, 1fr);
+}
+
+.elheader {
+    grid-column: 1 / span 12;
+    grid-row: 1 / span 1;
+}
+
+.elNavBar {
+    grid-column: 1 / span 12;
+    grid-row: 2 / span 1;
+}
+
+.elFooter {
+    grid-column: 1 / span 12;
+    grid-row: 12 / span 1;
+}
+
+.elAdverts {
+    grid-column: 12 / span 1;
+    grid-row: 3 / span 9;
+}
+
+.elSideNavBar {
+    grid-column: 1 / span 1;
+    grid-row: 3 / span 9;
+}
+
+.elMainBody {
+    grid-column: 2 / span 10;
+    grid-row: 3 / span 9;
+}
+
+.navContainer {
+    box-shadow: 0 5px 40px #9b9b92;
+}
+
+.nav {
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+}
+
+.navContainer .nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.nav .ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
